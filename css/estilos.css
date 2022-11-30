@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    font-size: 20px;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
+
+/*Pseudoclases*/
+a:hover{
+    background: #f10086;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+
+a:active {
+    background: blueviolet;
+    color: black;
+}
+
+a:link{
+    color: green;
+}
+
+a:visited{
+    color: red;
+}
+
+/*first and last child*/
+.grupo{
+    width: 500px;
+    margin: 20px auto;
+    background-color: gray;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.parrafos p:first-child{
+    background: red;
+    color: white;
+}
+
+.parrafos p:last-child{
+    background: black;
+    color: white;
+}
+
+/*First and last type*/
+.elementos p:first-of-type{
+    background: #f10086;
+    color: white;
+}
+
+.elementos p:last-of-type{
+    background: blueviolet;
+    color: white;
+}
+
+.elementos div:first-of-type{
+    background: #f10086;
+    color: white;
+}
+
+/*nth-child y nth-last-child*/
+/*.lista :nth-child(even){
+    background: #00cdf1;
+    color: black;
+}*/
+
+.lista :nth-last-child(4){
+    background: red;
+    color: white
+}
+
+
+
+
+
+
+/*MediaQueries*/
+@media screen and (min-width: 768px) and (max-width: 900px){
+    h1{
+        font-size: 80px;
+        color: #f10086;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px){
+    h1{
+        font-size: 80px;
+        color: #000;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+    }
+ 
+}
+
+
+
+
+
+
+
+
