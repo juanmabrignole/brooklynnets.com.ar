@@ -1,78 +1,115 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/*Modularizacion*/
+/*Variables Globales*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-nav{
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+/*SASS*/
+/*Nesting*/
+nav {
+  width: 900px;
+  padding: 20px;
+}
+nav ul {
+  color: #f10086;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li:active {
+  color: blue;
+}
+nav ul li a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Nesting II*/
+div {
+  width: 100px;
+  height: 100px;
+  background-color: #2ecc71;
+  padding: 15px;
+}
+div p {
+  font-size: 20px;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /*variable local*/
+  font-size: 25px;
 }
 
 a {
-    font-size: 20px;
-    color: black;
-    font-family: "Roboto", sans-serif;
-    text-decoration: none;
+  font-size: 20px;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
 }
 
 /*Pseudoclases*/
-a:hover{
-    background: #f10086;
-    border-radius: 5px;
-    padding: 5px;
-    color: white;
+a:hover {
+  background: #f10086;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
 }
 
 a:active {
-    background: blueviolet;
-    color: black;
+  background: blueviolet;
+  color: black;
 }
 
-a:link{
-    color: green;
+a:link {
+  color: green;
 }
 
-a:visited{
-    color: red;
+a:visited {
+  color: red;
 }
 
 /*first and last child*/
-.grupo{
-    width: 500px;
-    margin: 20px auto;
-    background-color: gray;
-    padding: 10px;
-    font-size: 20px;
+.grupo {
+  width: 500px;
+  margin: 20px auto;
+  background-color: #2ecc71;
+  padding: 10px;
+  font-size: 20px;
 }
 
-.parrafos p:first-child{
-    background: red;
-    color: white;
+.parrafos p:first-child {
+  background: red;
+  color: white;
 }
 
-.parrafos p:last-child{
-    background: black;
-    color: white;
+.parrafos p:last-child {
+  background: black;
+  color: white;
 }
 
 /*First and last type*/
-.elementos p:first-of-type{
-    background: #f10086;
-    color: white;
+.elementos p:first-of-type {
+  background: #f10086;
+  color: white;
 }
 
-.elementos p:last-of-type{
-    background: blueviolet;
-    color: white;
+.elementos p:last-of-type {
+  background: blueviolet;
+  color: white;
 }
 
-.elementos div:first-of-type{
-    background: #f10086;
-    color: white;
+.elementos div:first-of-type {
+  background: #f10086;
+  color: white;
 }
 
 /*nth-child y nth-last-child*/
@@ -80,39 +117,25 @@ a:visited{
     background: #00cdf1;
     color: black;
 }*/
-
-.lista :nth-last-child(4){
-    background: red;
-    color: white
+.lista :nth-last-child(4) {
+  background: #2ecc71;
+  color: white;
 }
-
-
-
-
-
 
 /*MediaQueries*/
-@media screen and (min-width: 768px) and (max-width: 900px){
-    h1{
-        font-size: 80px;
-        color: #f10086;
-    }
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  h1 {
+    font-size: 80px;
+    color: #2ecc71;
+  }
+}
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  h1 {
+    font-size: 80px;
+    color: #000;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    text-align: center;
+  }
 }
 
-@media screen and (min-width: 901px) and (max-width: 1200px){
-    h1{
-        font-size: 80px;
-        color: #000;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        text-align: center;
-    }
- 
-}
-
-
-
-
-
-
-
-
+/*# sourceMappingURL=estilos.css.map */

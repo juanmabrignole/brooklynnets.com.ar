@@ -1,0 +1,166 @@
+/*Modularizacion*/
+@import "fondos";
+@import "sizes";
+@import "fonts";
+
+/*Variables Globales*/
+$color-fuente: red;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*SASS*/
+
+/*Nesting*/
+
+nav {
+    width: 900px;
+    padding: $relleno;
+
+    ul{
+        color: #f10086;
+
+        li{
+            list-style: none;
+
+            &:active{
+                color: blue;
+            }
+
+            a{
+                text-decoration: none;
+                font-family: $font-principal;
+            }
+        }
+    }
+}
+
+/*Nesting II*/
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: $background;
+    padding: 15px;
+    p {
+        font-size: 20px;
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+}
+
+
+nav{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /*variable local*/
+    $size-nav: 25px; 
+    font-size: $size-nav;
+}
+
+a {
+    font-size: 20px;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
+
+/*Pseudoclases*/
+a:hover{
+    background: #f10086;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+
+a:active {
+    background: blueviolet;
+    color: black;
+}
+
+a:link{
+    color: green;
+}
+
+a:visited{
+    color: red;
+}
+
+/*first and last child*/
+.grupo{
+    width: 500px;
+    margin: 20px auto;
+    background-color: $background;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.parrafos p:first-child{
+    background: red;
+    color: white;
+}
+
+.parrafos p:last-child{
+    background: black;
+    color: white;
+}
+
+/*First and last type*/
+.elementos p:first-of-type{
+    background: #f10086;
+    color: white;
+}
+
+.elementos p:last-of-type{
+    background: blueviolet;
+    color: white;
+}
+
+.elementos div:first-of-type{
+    background: #f10086;
+    color: white;
+}
+
+/*nth-child y nth-last-child*/
+/*.lista :nth-child(even){
+    background: #00cdf1;
+    color: black;
+}*/
+
+.lista :nth-last-child(4){
+    background: $background;
+    color: white
+}
+
+
+
+/*MediaQueries*/
+@media screen and (min-width: 768px) and (max-width: 900px){
+    h1{
+        font-size: 80px;
+        color: $background;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px){
+    h1{
+        font-size: 80px;
+        color: #000;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+    }
+ 
+}
+
+
+
+
+
+
+
