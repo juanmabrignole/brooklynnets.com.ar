@@ -1,5 +1,89 @@
+@charset "UTF-8";
 /*Modularizacion*/
 /*Variables Globales*/
+/*Sass II*/
+/*Operadores matemáticos*/
+body {
+  /*Condicionales IF*/
+  background-color: pink;
+  padding: 20px;
+  width: 1080px;
+}
+
+/*Bucle FOR*/
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 6rem;
+}
+
+h4 {
+  font-size: 8rem;
+}
+
+h5 {
+  font-size: 10rem;
+}
+
+h6 {
+  font-size: 12rem;
+}
+
+/*Bucle EACH*/
+.pink {
+  background-color: pink;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.blue {
+  background-color: blue;
+}
+
+/*Mapas*/
+div {
+  background-color: green;
+  text-align: center;
+  padding: 1rem;
+  font-size: 35px;
+}
+
+/*Extend*/
+.card, .usercard {
+  background: #fff;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+/*Mixins/Funciones*/
+.principales {
+  border: 10px solid red;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px black;
+}
+
+.img-main {
+  border: 5px solid green;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px yellow;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +114,7 @@ nav ul li a {
 div {
   width: 100px;
   height: 100px;
-  background-color: #2ecc71;
+  background-color: green;
   padding: 15px;
 }
 div p {
@@ -78,10 +162,10 @@ a:visited {
 }
 
 /*first and last child*/
-.grupo {
+.grupo, .grupo2 {
   width: 500px;
   margin: 20px auto;
-  background-color: #2ecc71;
+  background-color: green;
   padding: 10px;
   font-size: 20px;
 }
@@ -118,7 +202,7 @@ a:visited {
     color: black;
 }*/
 .lista :nth-last-child(4) {
-  background: #2ecc71;
+  background: green;
   color: white;
 }
 
@@ -126,7 +210,7 @@ a:visited {
 @media screen and (min-width: 768px) and (max-width: 900px) {
   h1 {
     font-size: 80px;
-    color: #2ecc71;
+    color: green;
   }
 }
 @media screen and (min-width: 901px) and (max-width: 1200px) {
