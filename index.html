@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="BASKETBALL, BASKET, NETS, BROOKLYN, NBA, JERSEY, DEPORTE, SPORT, JORDAN, LEGENDS, EQUIPO, BIENVENIDA, OFICIAL SITE">
+    <meta name="description" content="Te damos la bienvenida al sitio oficial de los Brooklyn Nets">
     <!--Favicon-->
     <link rel="shortcut icon" href="./assets/icono/brooklyn-nets-logo-symbol-300x300.png" type="image/x-icon">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
     <!--Hoja de estilos CSS-->
     <link rel="stylesheet" href="css/estilos.css">
-    <title>Bienvenidos a la web de los Nets</title>
+    <title>Brooklyn Nets- Home</title>
 </head>
+
 <body>
 
     <nav>
@@ -34,6 +39,39 @@
             </ul>
     </nav>
 
+    <!--Slider con bootstrap-->
+    <div class="container mt-4">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/img/bruno-aguirre-tXJuW9htxhE-unsplash.jpg" class="d-block w-100" alt="pileta">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/markus-spiske-BfphcCvhl6E-unsplash.jpg" class="d-block w-100" alt="corriendo">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/bruno-aguirre-wWABhhDyFl4-unsplash.jpg" class="d-block w-100" alt="zapas">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+    
+    
+    
     <h1>Reforzando responsive</h1>
 
     <!--First and last child-->
@@ -72,7 +110,7 @@
         </div>
     </div>
 
-
+<script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     
 </body>
